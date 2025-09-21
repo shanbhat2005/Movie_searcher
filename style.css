@@ -1,0 +1,101 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1616; /* Dark background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+
+        /* Main App Container */
+        .container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* Form Styling */
+        #form-movie {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        #form-movie input {
+            flex-grow: 1;
+            padding: 15px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #2a2a2a;
+            color: white;
+            font-size: 16px;
+        }
+        
+        #form-movie input:focus {
+            outline: none;
+            border-color: #c0392b;
+        }
+
+        #form-movie button {
+            padding: 15px 25px;
+            background-color: #c0392b; /* A better brown/red */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #form-movie button:hover {
+            background-color: #a53125;
+        }
+        
+        /* The main card container */
+        .movie-card {
+            width: 280px; /* A slightly bigger, better default size */
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            margin: 20px auto; /* Auto margins will center it */
+            text-align: left;
+            border: 1px solid #444;
+        }
+
+        .movie-card .movie-poster-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .movie-card .movie-details {
+            padding: 15px;
+        }
+
+        .movie-card .movie-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #f1f1f1;
+        }
+
+        .movie-card .movie-year {
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        /* For messages like 'Loading...' or 'Movie not found' */
+        #result .message {
+            color: #888;
+            margin-top: 30px;
+        }
